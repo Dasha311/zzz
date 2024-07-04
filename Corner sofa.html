@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Store - Furniture and Decor for Your Home</title>
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Corner sofa</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+
+    <div class="content" id="products">
+        <h2>Our Products</h2>
+        <div class="products">
+            <!-- Пример одного товара с кнопкой "Добавить в корзину" -->
+            <div class="product">
+                <img src="https://sc02.alicdn.com/kf/HTB1CT_5SpXXXXXTXFXXq6xXFXXXy/220968994/HTB1CT_5SpXXXXXTXFXXq6xXFXXXy.jpg" alt="Corner sofa">
+                <h3>Elegance</h3>
+                <p>This corner sofa adds a touch of sophistication to your living space.</p>
+                <button onclick="addToCart('Elegance', 'https://sc02.alicdn.com/kf/HTB1CT_5SpXXXXXTXFXXq6xXFXXXy/220968994/HTB1CT_5SpXXXXXTXFXXq6xXFXXXy.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://a.allegroimg.com/original/11b1c3/6c9ab2624a1c850716f386fefeaf/Nowoczesny-NAROZNIK-Rozkladany-do-salonu-KLARA-P" alt="Sofa book">
+                <h3>Versa</h3>
+                <p>A practical sofa that effortlessly converts to suit your needs.</p>
+                <button onclick="addToCart('Versa', 'https://a.allegroimg.com/original/11b1c3/6c9ab2624a1c850716f386fefeaf/Nowoczesny-NAROZNIK-Rozkladany-do-salonu-KLARA-P')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://ae01.alicdn.com/kf/HTB1tNp9IVXXXXatXVXXq6xXFXXXZ/Tasar-mc-modern-stil-en-kademeli-inek-hakiki-deri-kanepe-kesit-k-e-oturma-odas-ev.jpg" alt="Sofa bed">
+                <h3>Comfort Plus</h3>
+                <p>A blend of comfort and versatility, ideal for any home.</p>
+                <button onclick="addToCart('Comfort Plus', 'https://ae01.alicdn.com/kf/HTB1tNp9IVXXXXatXVXXq6xXFXXXZ/Tasar-mc-modern-stil-en-kademeli-inek-hakiki-deri-kanepe-kesit-k-e-oturma-odas-ev.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://a.allegroimg.com/original/1131a0/5241ad054734be55f06b5c1459bf" alt="Sofa">
+                <h3>Serenity</h3>
+                <p>A stylish addition that enhances the ambiance of your home.</p>
+                <button onclick="addToCart('Serenity', 'https://a.allegroimg.com/original/1131a0/5241ad054734be55f06b5c1459bf')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/originals/dc/ff/36/dcff36c097146c9ed190531139e716dd.jpg" alt="Sofas for cafes and commercial enterprises">
+                <h3>Business Class</h3>
+                <p>Designed for durability and style, perfect for commercial spaces.</p>
+                <button onclick="addToCart('Business Class', 'https://i.pinimg.com/originals/dc/ff/36/dcff36c097146c9ed190531139e716dd.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://mkmgroup.ru/d/sovremennye_uglovye_divany.jpg" alt="Sofas for the kitchen">
+                <h3>Nook</h3>
+                <p>Compact and cozy, perfect for kitchen areas.</p>
+                <button onclick="addToCart('Nook', 'https://mkmgroup.ru/d/sovremennye_uglovye_divany.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://mkmgroup.ru/d/nowoczesny-naroznik-liquid-wersal-na-magazynie.jpg" alt="Sofas for the kitchen">
+                <h3>Cosy Corner</h3>
+                <p>Ideal for any corner in your home, providing comfort and style.</p>
+                <button onclick="addToCart('Cosy Corner', 'https://mkmgroup.ru/d/nowoczesny-naroznik-liquid-wersal-na-magazynie.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://nazya.com/anyimage/ae01.alicdn.com/kf/HTB14xIQLXXXXXbfXFXXq6xXFXXX0/Muebles.jpg" alt="Sofa 8">
+                <h3>Grandeur</h3>
+                <p>Spacious and inviting, perfect for family gatherings.</p>
+                <button onclick="addToCart('Grandeur', 'https://nazya.com/anyimage/ae01.alicdn.com/kf/HTB14xIQLXXXXXbfXFXXq6xXFXXX0/Muebles.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://a.allegroimg.com/s1024/0c25f4/953d562d4c37a3fe4f7943e34e74" alt="Sofa 9">
+                <h3>Modernista</h3>
+                <p>A contemporary sofa that fits seamlessly into modern interiors.</p>
+                <button onclick="addToCart('Modernista', 'https://a.allegroimg.com/s1024/0c25f4/953d562d4c37a3fe4f7943e34e74')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://nazya.com/anyimage/ae01.alicdn.com/kf/HTB16p0_NXXXXXbOXpXXq6xXFXXXP/-.jpg" alt="Sofa 10">
+                <h3>Urban Chic</h3>
+                <p>Stylish and comfortable, ideal for urban living spaces.</p>
+                <button onclick="addToCart('Urban Chic', 'https://nazya.com/anyimage/ae01.alicdn.com/kf/HTB16p0_NXXXXXbOXpXXq6xXFXXXP/-.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://kemittupload.s3.eu-central-1.amazonaws.com/img/product/images-1650179396374.jpg" alt="Sofa 11">
+                <h3>Eleganza</h3>
+                <p>Elegant design that adds a touch of class to any room.</p>
+                <button onclick="addToCart('Eleganza', 'https://kemittupload.s3.eu-central-1.amazonaws.com/img/product/images-1650179396374.jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://betonpogreb.ru/wp-content/uploads/2/9/f/29fbfcae0ce6cedc9180e8d8e08c57e5.jpeg" alt="Sofa 12">
+                <h3>Family Haven</h3>
+                <p>Spacious and comfortable, perfect for family living.</p>
+                <button onclick="addToCart('Family Haven', 'https://betonpogreb.ru/wp-content/uploads/2/9/f/29fbfcae0ce6cedc9180e8d8e08c57e5.jpeg')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Furniture Store. All rights reserved.</p>
+        <p>For orders, call: 87087449838</p>
+        <p>Email: <a href="mailto:dbezrukova482@gmail.com">dbezrukova482@gmail.com</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

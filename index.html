@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Store - Furniture and Decor for Your Home</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="header">
+        <h1>Furniture Store</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="index1.html">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+    <section class="hero" id="home">
+        <div>
+            <h1>Discover Your Style</h1>
+            <p>Find the perfect furniture and decor for your home.</p>
+        </div>
+    </section>
+
+    <div class="content" id="products">
+        <h2>Our Products</h2>
+        <div class="products">
+            <div class="product scroll-item">
+                <img src="https://ottohome.ru/wp-content/uploads/2022/09/01-sectional-main1.jpg" alt="Product 1" class="main-image">
+                <h3>Corner sofa</h3>
+                <section class="catalog-button">
+                    <div class="button-container">
+                        <a href="Corner sofa.html" class="catalog-link">
+                            <span>View the options</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+            <div class="product scroll-item">
+                <img src="https://idei.club/uploads/posts/2022-02/1645829091_42-idei-club-p-starii-divan-knizhka-interer-krasivo-foto-61.jpg" alt="Product 2">
+                <h3>Sofa book</h3>
+                <section class="catalog-button">
+                    <div class="button-container">
+                        <a href="Sofa book.html" class="catalog-link">
+                            <span>View the options</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+            <div class="product scroll-item">
+                <img src="https://usonahome.com/images/Product/large/04220.jpg" alt="Product 3">
+                <h3>Sofa bed</h3>
+                <section class="catalog-button">
+                    <div class="button-container">
+                        <a href="Sofa bed.html" class="catalog-link">
+                            <span>View the options</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+            <div class="product scroll-item">
+                <img src="https://mfmd.rencdn.com/product/ashley/images/31102-64-46-77-46-08.jpg" alt="Product 4">
+                <h3>Sofa</h3>
+                <section class="catalog-button">
+                    <div class="button-container">
+                        <a href="Sofa.html" class="catalog-link">
+                            <span>View the options</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+            <div class="product scroll-item">
+                <img src="https://meblix.ua/image/catalog/O-nas/k3.jpg" alt="Product 5">
+                <h3>Sofas for cafes and commercial enterprises</h3>
+                <section class="catalog-button">
+                    <div class="button-container">
+                        <a href="Sofas for cafes and commercial enterprises.html" class="catalog-link">
+                            <span>View the options</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+            <div class="product scroll-item">
+                <img src="https://mkmgroup.ru/d/osobennosti_uzkih_divanov_dlya_kuhni_so_spalnym_mestom.jpg" alt="Product 6">
+                <h3>Sofas for the kitchen</h3>
+                <section class="catalog-button">
+                    <div class="button-container">
+                        <a href="Sofas for the kitchen.html" class="catalog-link">
+                            <span>View the options</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <section class="form-section", id="contact">
+        <div class="form-container">
+            <h2>Contact Us</h2>
+            <form action="https://formspree.io/f/{your_form_id}" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Furniture Store. All rights reserved.</p>
+        <p>For orders, call: 87087449838</p>
+        <p>Email: <a href="mailto:dbezrukova482@gmail.com">dbezrukova482@gmail.com</a></p>
+    </footer>
+    <script>
+        // Background image switch in hero section and scroll animations
+        const heroSection = document.querySelector('.hero');
+        const images = [
+            'https://www.comfyco.com/pics3/extras/lg/el-vento-4-lg.jpg',
+            'https://ottohome.ru/wp-content/uploads/2022/09/01-sectional-main1.jpg',
+            'https://4.allegroimg.com/original/015bad/255daee3467fa80d8a21f6afd894/Mega-NAROZNIK-DAMARIO-VI-funkcja-spania-rogowka-Kolor-obicia-inny-kolor',
+            'https://modern1furniture.com/wp-content/uploads/2021/06/Liquid-Sofa-Bed-2.jpg',
+            'https://mfmd.rencdn.com/product/ashley/images/31102-64-46-77-46-08.jpg',
+            'https://oneandhome.ru/sites/default/files/blog2022/uglovoy-divan-rekomendasii-po-viboru-05.JPG',
+            'https://i.pinimg.com/originals/ef/c7/f5/efc7f526a58cf889eef85912c1611b26.png'
+        ];
+        let currentImageIndex = 0;
+
+        function changeBackgroundImage() {
+            heroSection.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+        }
+
+        setInterval(changeBackgroundImage, 5000); // Change image every 5 seconds
+
+        // Scroll animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const hero = document.querySelector('.hero');
+            const header = document.querySelector('.header');
+            const scrollItems = document.querySelectorAll('.scroll-item');
+            const formSection = document.querySelector('.form-section');
+            const scrollAnimation = () => {
+                let windowCenter = (window.innerHeight / 2) + window.scrollY;
+                scrollItems.forEach(el => {
+                    let scrollOffset = el.offsetTop + (el.offsetHeight / 2);
+                    if (windowCenter >= scrollOffset) {
+                        el.classList.add('animation-class');
+                    } else {
+                        el.classList.remove('animation-class');
+                    }
+                });
+            };
+            const headerFixed = () => {
+                let scrollTop = window.scrollY;
+                let heroCenter = hero.offsetHeight / 2;
+                if (scrollTop >= heroCenter) {
+                    header.classList.add('fixed');
+                    hero.style.marginTop = `${header.offsetHeight}px`;
+                } else {
+                    header.classList.remove('fixed');
+                    hero.style.marginTop = '0px';
+                }
+            };
+            headerFixed();
+            scrollAnimation();
+            formSection.classList.add('animation-class'); // Trigger the form animation on page load
+            window.addEventListener('scroll', () => {
+                headerFixed();
+                scrollAnimation();
+            });
+        });
+    </script>
+</body>
+</html>
